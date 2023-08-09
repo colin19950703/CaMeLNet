@@ -104,6 +104,7 @@ Details of data folder
 Model weights obtained from training CaMeL-Net here:
 - [Colon checkpoint](-)
 - [Gastric checkpoint](-)
+
 If any of the above checkpoints are used, please ensure to cite the corresponding paper.
 
 ## Citation
