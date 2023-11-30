@@ -2,8 +2,8 @@
 by Jaeung Lee, Chiwon Han, Kyungeun Kim, Gi-Ho Park, and Jin Tae Kwak.
 
 ## Introduction
-This repository is for our CMPB 2023 paper [Centroid-aware Metric Learning for Efficient Multi-class Cancer Classification in Pathology Images]
-(-).
+This repository is for our CMPB 2023 paper : \
+Centroid-aware Metric Learning for Efficient Multi-class Cancer Classification in Pathology Images [[paper link]](https://www.sciencedirect.com/science/article/pii/S0169260723004157)
 
 ![CaMeL_Net](./data/Workflow.png)
 
@@ -56,34 +56,12 @@ Details of data folder
     |     ├─ ...
     |     └─ wsi_100
     └─ gastric
-       ├─ gastric_wsi
-       |  ├─ gastric_wsi_PS1024_80_her01_step05_bright230_resize05
-       |  |  ├─ gastric_0
-       |  |  ├─ ...
-       |  |  └─ gastric_95
-       |  ├─ gastric_wsi_PS1024_80_her01_step10_bright230_resize05
-       |  |  ├─ gastric_0
-       |  |  ├─ ...
-       |  |  └─ gastric_95
-       |  └─ gastric_wsi_PS1024_80_her01_split.csv
-       └─ gastric_wsi_addition
-          ├─ gastric_wsi_addition_PS1024_ano08_step05_bright230
-          |  |  ├─ gastric_0
-          |  |  ├─ ...
-          |  |  └─ gastric_61
-          ├─ gastric_wsi_addition_PS1024_ano08_step05_bright230_resize05
-          |  |  ├─ gastric_0
-          |  |  ├─ ...
-          |  |  └─ gastric_61
-          ├─ gastric_wsi_addition_PS1024_ano08_step10_bright230
-          |  |  ├─ gastric_0
-          |  |  ├─ ...
-          |  |  └─ gastric_61
-          ├─ gastric_wsi_addition_PS1024_ano08_step10_bright230_resize05
-          |  |  ├─ gastric_0
-          |  |  ├─ ...
-          |  |  └─ gastric_61
-          └─ gastric_wsi_addition_PS1024_ano08_split.csv
+       └─ KBSMC_gastric_cancer_grading_512 
+          ├─ WSIs 
+          │  ├─ WSIs_001 
+          │  ├─ ... 
+          │  └─ WSIs_158 
+          └─ WSIs_Split.csv
 ```
 
 # Running the Code
@@ -108,6 +86,15 @@ Model weights obtained from training CaMeL-Net here:
 If any of the above checkpoints are used, please ensure to cite the corresponding paper.
 
 ## Citation
-If CaMeL-Net is useful for your research, please consider citing the following paper:
-```angular2html
+If CaMeL-Net is useful for your research, please consider citing the following paper: \
+BibTex entry: <br />
 ```
+@article{lee2023camel,
+  title={CaMeL-Net: Centroid-aware metric learning for efficient multi-class cancer classification in pathology images},
+  author={Lee, Jaeung and Han, Chiwon and Kim, Kyungeun and Park, Gi-Ho and Kwak, Jin Tae},
+  journal={Computer Methods and Programs in Biomedicine},
+  volume={241},
+  pages={107749},
+  year={2023},
+  publisher={Elsevier}
+}
